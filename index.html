@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>bootstrap 연습장</title>
+</head>
+<body>
+
+
+<div class="container">
+
+    <div class="text-center">
+        <h1>bootstrap 연습장</h1>
+    </div>
+
+    <h2 id="basic">연습하기 위한 최적의 설정</h2>
+    <p>jetbrains의 설정, vscode등의 설정등을 하는 팁들을 모아두었습니다.</p>
+
+    <!--    <div class="alert alert-warning" role="alert">-->
+    <!--        <h3>연습하기 위한 최적의 설정</h3>-->
+    <!--    </div>-->
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="tip-a1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tip-b1">
+                    jetbrains에서 live templete 설정하는 방법
+                </button>
+            </h2>
+            <div id="tip-b1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    디폴트 내용이 여기에 들어갑니다.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="tip-a2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tip-b2">
+                    jetbrains live templete 내용
+                </button>
+            </h2>
+            <div id="tip-b2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="tip-a3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tip-b3">
+                    jetbrains selection을 tag로 wrap하는 방법
+                </button>
+            </h2>
+            <div id="tip-b3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                    though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="tip-a4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tip-b4">
+                    jetbrains live edit 사용하는 방법
+                </button>
+            </h2>
+            <div id="tip-b4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="tip-a5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tip-b5">
+                    현재 페이지를 캡춰하기
+                </button>
+            </h2>
+            <div id="tip-b5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body text-white" style="background-image: url(background.png);background-repeat: no-repeat;">
+                    style-background-image-url
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="tip-a-example">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tip-b-example">
+                    example은 이쪽에서 많이 찾을 수 있습니다.
+                </button>
+            </h2>
+            <div id="tip-b-example" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <a href="https://bootsnipp.com/tags" target="_blank">bootstrap example site</a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="tip-a-disable">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="# tip-b-disable">
+                    아코디언을 disable하게 하려면 target을 엉터리로 적으면 됩니다.
+                </button>
+            </h2>
+            <div id="tip-b-disable" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">이 내용은 보이지 않습니다.</div>
+            </div>
+        </div>
+
+
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="tip-a6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="# tip-b6">
+                    내 청춘을 함께한 키보드여.
+                </button>
+            </h2>
+            <div id="tip-b6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">결국은 함께 우주의 먼지가 되겠지만, 뜨겁게 함께 했던 기억은 오랫동안 남아주길 바라네.</div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr class="m-5">
+
+    <h2 id="framework">기본 bootstrap 연습</h2>
+    <p>Examples that focus on implementing uses of built-in components provided by Bootstrap.</p>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_basic_table.html">
+                <img class="img-thumbnail mb-3" src="page_basic_table.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">기본 테이블 연습</h3>
+            </a>
+            <p class="text-muted">타타닥 하고 테이블을 만들고 싶을 때 사용합니다.</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_basic_listgroup_with_checkbox.html">
+                <img class="img-thumbnail mb-3" src="page_basic_listgroup_with_checkbox.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">체크박스를 가진 리스트 그룹</h3>
+            </a>
+            <p class="text-muted">todo를 만들때 사용한 내용입니다.</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_basic_listgroup_variation.html">
+                <img class="img-thumbnail mb-3" src="page_basic_listgroup_variation.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">리스트그룹 변형</h3>
+            </a>
+            <p class="text-muted">list group은 밋밋하므로 아코디언을 포함해서 여러가지로 변형을 해 봤습니다.</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_basic_listgroup.html">
+                <img class="img-thumbnail mb-3" src="page_basic_listgroup.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">블로그 타입 리스트그룹</h3>
+            </a>
+            <p class="text-muted">블로그 타입의 리스트그룹입니다. 기본적으로 card 입니다.</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_basic_jumbotron.html" hreflang="ar">
+                <img class="img-thumbnail mb-3" src="page_basic_jumbotron.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">점보트론</h3>
+            </a>
+            <p class="text-muted">점보트론, 또는 그와 비슷한 div구성을 표현합니다.</p>
+        </div>
+    </div>
+
+    <hr class="m-5">
+
+    <h2 id="application1">기본 bootstrap 응용 1</h2>
+    <p>Examples that focus on implementing uses of built-in components provided by Bootstrap.</p>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_app_fx_news.html">
+                <img class="img-thumbnail mb-3" src="page_app_fx_news.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">환율 소식</h3>
+            </a>
+            <p class="text-muted">타타닥 하고 테이블을 만들고 싶을 때 사용합니다.</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_app_today_news.html">
+                <img class="img-thumbnail mb-3" src="page_app_today_news.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">today news</h3>
+            </a>
+            <p class="text-muted">list group은 밋밋하므로 아코디언을 포함해서 여러가지로 변형을 해 봤습니다.</p>
+        </div>
+
+    </div>
+
+    <hr class="m-5">
+
+    <h2 id="pages_datatable1">Datatable</h2>
+    <p>datatable plugin</p>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_app_datatable.html">
+                <img class="img-thumbnail mb-3" src="page_app_datatable.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">datatable</h3>
+            </a>
+            <p class="text-muted">타타닥 하고 datatable을 만들고 싶을 때 사용합니다.</p>
+        </div>
+        <!-- / .col-->
+    </div>
+    <!-- / .row-->
+
+    <hr class="m-5">
+
+    <h2 id="pages_fullcalendar">fullcalendar</h2>
+    <p>datatable plugin</p>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_app_fullcalendar.html">
+                <img class="img-thumbnail mb-3" src="page_app_fullcalendar.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">fullcalendar</h3>
+            </a>
+            <p class="text-muted">타타닥 하고 fullcalendar을 만들고 싶을 때 사용합니다.</p>
+        </div>
+        <!-- / .col-->
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_app_fullcalendar-premium-timeline-view.html">
+                <img class="img-thumbnail mb-3" src="page_app_fullcalendar-premium-timeline-view.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">timeline view</h3>
+            </a>
+            <p class="text-muted">row가 리소스, column이 timeline입니다.</p>
+        </div>
+        <!-- / .col-->
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_app_fullcalendar-premium-vertical-resource-view.html">
+                <img class="img-thumbnail mb-3" src="page_app_fullcalendar-premium-vertical-resource-view.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">vertical resource view</h3>
+            </a>
+            <p class="text-muted">row가 timeline, column이 리소스입니다.</p>
+        </div>
+        <!-- / .col-->
+
+    </div>
+    <!-- / .row-->
+
+    <hr class="m-5">
+
+    <h2 id="pages_googlemap">googlemap</h2>
+    <p>googlemap</p>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_app_googlemap.html">
+                <img class="img-thumbnail mb-3" src="page_app_googlemap.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">googlemap</h3>
+            </a>
+            <p class="text-muted">타타닥 하고 googlemap 만들고 싶을 때 사용합니다.</p>
+        </div>
+        <!-- / .col-->
+
+    </div>
+    <!-- / .row-->
+
+    <hr class="m-5">
+
+    <h2 id="enhanced_example">Example 강화 시킨 것 (Snippets)</h2>
+    <p>Examples that focus on implementing uses of built-in components provided by Bootstrap.</p>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_snippets_headers.html">
+                <img class="img-thumbnail mb-3" src="page_example_snippets_headers.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Snippets headers</h3>
+            </a>
+            <p class="text-muted">Snippets headers</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_snippets_heros.html">
+                <img class="img-thumbnail mb-3" src="page_example_snippets_heros.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Snippets heros</h3>
+            </a>
+            <p class="text-muted">Snippets heros</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_snippets_features.html">
+                <img class="img-thumbnail mb-3" src="page_example_snippets_features.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Snippets features</h3>
+            </a>
+            <p class="text-muted">기본적으로 card</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_snippets_sidebars.html">
+                <img class="img-thumbnail mb-3" src="page_example_snippets_sidebars.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Snippets sidebars</h3>
+            </a>
+            <p class="text-muted">Snippets sidebars</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_snippets_footers.html">
+                <img class="img-thumbnail mb-3" src="page_example_snippets_footers.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Snippets footers</h3>
+            </a>
+            <p class="text-muted">Snippets footers</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_snippets_dropdowns.html">
+                <img class="img-thumbnail mb-3" src="page_example_snippets_dropdowns.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Snippets drop downs</h3>
+            </a>
+            <p class="text-muted">Snippets drop downs</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_snippets_listgroups.html">
+                <img class="img-thumbnail mb-3" src="page_example_snippets_listgroups.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Snippets list groups</h3>
+            </a>
+            <p class="text-muted">Snippets list groups</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_snippets_modals.html">
+                <img class="img-thumbnail mb-3" src="page_example_snippets_modals.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Snippets modals</h3>
+            </a>
+            <p class="text-muted">Snippets modals</p>
+        </div>
+    </div>
+
+    <h2 id="enhanced_example2">Example 강화 시킨 것 (Custom Component)</h2>
+    <p>Examples that focus on implementing uses of built-in components provided by Bootstrap.</p>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_custom_component_album.html">
+                <img class="img-thumbnail mb-3" src="page_example_custom_component_album.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Custom Component album</h3>
+            </a>
+            <p class="text-muted">Custom Component album</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_custom_component_pricing.html">
+                <img class="img-thumbnail mb-3" src="page_example_custom_component_pricing.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Custom Component pricing</h3>
+            </a>
+            <p class="text-muted">Custom Component pricing</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_custom_component_checkout.html">
+                <img class="img-thumbnail mb-3" src="page_example_custom_component_checkout.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Custom Component checkout</h3>
+            </a>
+            <p class="text-muted">Custom Component checkout</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_custom_component_product.html">
+                <img class="img-thumbnail mb-3" src="page_example_custom_component_product.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Custom Component product</h3>
+            </a>
+            <p class="text-muted">Custom Component product</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_custom_component_cover.html">
+                <img class="img-thumbnail mb-3" src="page_example_custom_component_cover.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Custom Component cover</h3>
+            </a>
+            <p class="text-muted">Custom Component cover</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_custom_component_carousel.html">
+                <img class="img-thumbnail mb-3" src="page_example_custom_component_carousel.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Custom Component carousel</h3>
+            </a>
+            <p class="text-muted">Custom Component carousel</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_custom_component_blog.html">
+                <img class="img-thumbnail mb-3" src="page_example_custom_component_blog.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Custom Component blog</h3>
+            </a>
+            <p class="text-muted">Custom Component blog</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_custom_component_dashboard.html">
+                <img class="img-thumbnail mb-3" src="page_example_custom_component_dashboard.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Custom Component dashboard</h3>
+            </a>
+            <p class="text-muted">feather-icons을 사용하고, chart.js를 사용합니다.</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_custom_component_signin.html">
+                <img class="img-thumbnail mb-3" src="page_example_custom_component_signin.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Custom Component sign in</h3>
+            </a>
+            <p class="text-muted">Custom Component sign in</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_custom_component_signin_coreui.html">
+                <img class="img-thumbnail mb-3" src="page_example_custom_component_signin_coreui.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Custom Component sign in coreui</h3>
+            </a>
+            <p class="text-muted">Custom Component sign in coreui</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_custom_component_stickyfooter.html">
+                <img class="img-thumbnail mb-3" src="page_example_custom_component_stickyfooter.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Custom Component sticky footer</h3>
+            </a>
+            <p class="text-muted">Custom Component sticky footer</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_custom_component_stickyfooternavbar.html">
+                <img class="img-thumbnail mb-3" src="page_example_custom_component_stickyfooternavbar.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Custom Component sticky footer navbar</h3>
+            </a>
+            <p class="text-muted">Custom Component sticky footer navbar</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_custom_component_jumbotron.html">
+                <img class="img-thumbnail mb-3" src="page_example_custom_component_jumbotron.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Custom Component jumbotron</h3>
+            </a>
+            <p class="text-muted">Custom Component jumbotron</p>
+        </div>
+    </div>
+
+    <h2 id="enhanced_example3">Example 강화 시킨 것 (Framework)</h2>
+    <p>Examples that focus on implementing uses of built-in components provided by Bootstrap.</p>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_framework_starter_template.html">
+                <img class="img-thumbnail mb-3" src="page_example_framework_starter_template.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Framework starter template</h3>
+            </a>
+            <p class="text-muted">Framework starter template</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_framework_grid.html">
+                <img class="img-thumbnail mb-3" src="page_example_framework_grid.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Framework grid</h3>
+            </a>
+            <p class="text-muted">Framework grid</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_framework_cheatsheet.html">
+                <img class="img-thumbnail mb-3" src="page_example_framework_cheatsheet.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Framework cheatsheet</h3>
+            </a>
+            <p class="text-muted">card안에 listgroup이 있는 예제가 있습니다.</p>
+        </div>
+    </div>
+
+
+    <h2 id="enhanced_example4">Example 강화 시킨 것 (Nabar)</h2>
+    <p>Examples that focus on implementing uses of built-in components provided by Bootstrap.</p>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_navbars_navbars.html">
+                <img class="img-thumbnail mb-3" src="page_example_navbars_navbars.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Navbars</h3>
+            </a>
+            <p class="text-muted">Navbars</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_navbars_static.html">
+                <img class="img-thumbnail mb-3" src="page_example_navbars_static.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Navbar static</h3>
+            </a>
+            <p class="text-muted">Navbar static</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_navbars_fixed.html">
+                <img class="img-thumbnail mb-3" src="page_example_navbars_fixed.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Navbar fixed</h3>
+            </a>
+            <p class="text-muted">Navbar fixed</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_navbars_bottom.html">
+                <img class="img-thumbnail mb-3" src="page_example_navbars_bottom.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Navbar bottom</h3>
+            </a>
+            <p class="text-muted">Navbar bottom</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_example_navbars_offcanvas_navbar.html">
+                <img class="img-thumbnail mb-3" src="page_example_navbars_offcanvas_navbar.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Navbar Offcanvas navbar</h3>
+            </a>
+            <p class="text-muted">Navbar Offcanvas navbar</p>
+        </div>
+    </div>
+
+    <hr class="m-5">
+
+    <h2 id="withconoha">withconoha</h2>
+    <p>Examples that focus on implementing uses of built-in components provided by Bootstrap.</p>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_withconoha_login.html">
+                <img class="img-thumbnail mb-3" src="page_withconoha_login.png" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">Login</h3>
+            </a>
+            <p class="text-muted">api user로 로그인합니다.</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_withconoha_compute_list.html">
+                <img class="img-thumbnail mb-3" src="https://picsum.photos/id/329/480/300" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">compute list</h3>
+            </a>
+            <p class="text-muted">VM일람과 k8s 클러스터의 일람을 표시합니다.</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_withconoha_image_list.html">
+                <img class="img-thumbnail mb-3" src="https://picsum.photos/id/230/480/300" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">image list</h3>
+            </a>
+            <p class="text-muted">4종류의 이미지(공식, WithConoha, 커뮤니티, 파라이빗)를 사용할 수 있습니다.</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_withconoha_image_details.html">
+                <img class="img-thumbnail mb-3" src="https://picsum.photos/id/331/480/300" alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">image details</h3>
+            </a>
+            <p class="text-muted">타입,등록일,제작자등 상세한 설명을 볼 수 있습니다.</p>
+        </div>
+    </div>
+
+    <hr class="m-5">
+
+    <h2 id="dictionary">dictionary</h2>
+    <p>Examples that focus on implementing uses of built-in components provided by Bootstrap.</p>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
+            <a class="d-block" href="page_app_dictionary.html">
+                <img class="img-thumbnail mb-3" src="page_app_dictionary.png"
+                     alt="" width="480" height="300" loading="lazy">
+                <h3 class="h5 mb-1">dictionary</h3>
+            </a>
+            <p class="text-muted">dic.daum.net에 자신의 문장노트를 더한 것</p>
+        </div>
+    </div>
+
+</div>
+
+<hr class="m-5">
+
+<div class="container">
+    <div class="alert alert-primary" role="alert">
+        이 문서 만드는 데 사용된 매직 키
+    </div>
+    <pre class="d-flex justify-content-center">
+        b-$
+        .container
+        b-c-alert
+        .text-center>h1
+        b-c-lg-button
+        hr.m-5
+        pre.d-flex.justify-content-center
+    </pre>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+
+
+</body>
+</html>
